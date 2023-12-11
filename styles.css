@@ -1,66 +1,21 @@
-html {
-  max-width: 290px;
-}
-main {
-  display: block;
-}
-#navbar {
-  position: fixed;
-  min-width: 290px;
-  top: 0px;
-  left: 0px;
-  width: 300px;
+body {
   height: 100%;
-  border-right: solid;
-  border-color: rgba(0, 22, 22, 0.4);
-}
-nav {
-  display: block;
-}
-.nav-head {
-  color: black;
-  margin: 10px;
-  text-align: center;
-  font-size: 1.8em;
-  font-weight: thin;
-}
-header {
-  color: black;
-  padding: 20px;
-  text-align: center;
-  font-size: 1.8em;
-  font-weight: thin;
-  display: block;
-  text-align: left;
+  overflow: hidden;
+  margin: 0;
 }
 
-#navbar ul {
-  height: 88%;
-  padding: 0;
-  overflow-y: auto;
-  overflow-x: hidden;
+#main-doc {
+  display: flex;
 }
-ul {
-  display: block;
-  list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-}
-#navbar li {
-  border-top: 1px solid;
-  list-style: none;
-  position: relative;
-  width: 100%;
-  color: #4d4e53;
-}
-li {
-  display: list-item;
-  text-align: -webkit-match-parent;
-  margin: 10px;
-  color: #4d4e53;
+
+nav {
+  /* overflow-y: scroll; */
+  min-width: 290px; 
+  width: 30%;
+  height: 100vh;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+  
 }
 #navbar a {
   display: block;
@@ -70,22 +25,37 @@ li {
   cursor: pointer;
   margin: 5px;
 }
-#main-doc {
-  position: absolute;
-  margin-left: 310px;
-  padding: 20px;
-  margin-bottom: 110px;
+#navbar ul {
+  list-style-type: none;
 }
-main {
+
+.divsection {
+  flex: 1;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.nav-head {
+  margin: 10px;
+  text-align: center;
+}
+
+header {
+  color: black;
+  padding: 20px;
+  text-align: left;
+  font-size: 1.8em;
+  font-weight: thin;
   display: block;
 }
+
+
+
 code {
   display: block;
-  text-align: left;
   white-space: pre-line;
-  position: relative;
-  word-break: normal;
-  word-wrap: normal;
+  word-break: break-all;
+  word-wrap: break-word;
   line-height: 2;
   background-color: #f7f7f7;
   padding: 15px;
@@ -102,6 +72,4 @@ p {
 article {
   font-size: 14px;
   margin: 10px;
-}
-@media {
 }
